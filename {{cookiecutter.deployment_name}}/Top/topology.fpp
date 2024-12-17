@@ -23,7 +23,6 @@ module {{cookiecutter.deployment_name}} {
     instance rateDriver
     instance rateGroup1
     instance rateGroupDriver
-    instance systemResources
     instance textLogger
     instance timeHandler
     instance tlmSend
@@ -54,7 +53,6 @@ module {{cookiecutter.deployment_name}} {
       rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup1] -> rateGroup1.CycleIn
       rateGroup1.RateGroupMemberOut[0] -> commDriver.schedIn
       rateGroup1.RateGroupMemberOut[1] -> tlmSend.Run
-      rateGroup1.RateGroupMemberOut[2] -> systemResources.run
     }
 
     connections Downlink {

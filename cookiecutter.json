@@ -1,0 +1,4 @@
+{
+    "deployment_name": "fprime-freertos-arduino-deployment",
+    "__deployment_name_upper": "{{cookiecutter.deployment_name.upper()}}"
+}
